@@ -51,8 +51,6 @@ instalar_bib() {
 	apt-get install	wx3.0-doc
 	
 	echo " "
-	echo "wxWidgets instalado com sucesso"
-	echo " "
 
 }
 
@@ -154,6 +152,14 @@ cp "$include_dir/"*.hpp "$build_dir"
 if [ -f "$path/"makefile ]; then
 	make clean
 	make all
+	if [ $? -eq 0 ]; then
+		echo ""
+		echo "Deseja executar AVANTStation? (S/n)"
+		read resp
+		if [ $resp == "s" ] || [ $resp == "S" ]; then
+			./AVANTStation
+		fi
+	fi
 fi
 
 [[ -d "$build_dir" ]] && rm -r "$build_dir"

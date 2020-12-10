@@ -3,8 +3,6 @@
 Código principal da estação terrestre (ground station). Usado para configurar os VANTs da equipe (e.g. criar uma missão e então enviá-la para o computador de bordo do veículo) e também para monitoramento (e.g. telemetria).
 
 ## Configuração e Monitoramento dos VANTs
-O sistema de controle autônomo embarcado inclui um programa que permite configurar e monitorar os VANTs a equipe.
-
 No momento, o programa permite
 - Criar uma missão para o VANT, composta por
 	- Um nome; 
@@ -41,14 +39,14 @@ Por fim, se quiser compilar o código via terminal ou alguma outra IDE siga as i
 
 Usuários do Debian e Ubuntu podem executar o script `install.sh` para baixar os arquivos necessários para sua máquina. O script está incluído no repositório. 
 
-Após baixar o AVANTLink, abra o terminal e execute o seguinte comando (dentro do diretório do AVANTLink ou passando o caminho para o diretório como parâmetro):
+Após baixar o AVANTStation, abra o terminal e execute o seguinte comando (dentro do diretório do AVANTStation ou passando o caminho para o diretório como parâmetro):
 
 ```
 $ sudo bash install.sh
 ```
 O comando `sudo` é necessário, pois o script usa o `apt` para gerenciar os pacotes e precisa de acesso ao arquivo `/etc/apt/sources.list`.
 
-Após o término do download e instalação, o script automaticamente executará o makefile para montar o AVANTLink e tudo estará pronto. 
+Após o término do download e instalação, o script automaticamente executará o makefile para montar o AVANTStation e tudo estará pronto. 
 
 ------------------------------
 
@@ -67,9 +65,7 @@ Exibe dados de telemetria enviados pelo VANT. Caso não haja um conexão estabel
 *Apenas placeholder por ora*
 
 #### Criar missão
-Para criar uma missão, basta clicar em **Criar Missão** no menu principal e será exibida uma tela com os campos a serem preenchidos. No entanto, os dados devem ser inseridos em um formato específico, que é o que será abordado neste trecho. Ao clicar no botão, a seguinte tela é exibida:
-
-![tela de criar missão](https://imgur.com/a/ymkob1H "Tela exibida ao clicar em 'Criar Missão")
+Para criar uma missão, basta clicar em **Criar Missão** no menu principal e será exibida uma tela com os campos a serem preenchidos. No entanto, alguns dados devem ser inseridos em um formato específico, que é o que será abordado neste trecho.
 
 1. No campo referente ao nome, basta inserir o nome normalmente (e.g. Primeira Missão)
 
