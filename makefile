@@ -1,7 +1,3 @@
-# TODO
-# - adicionar flags para o compilador (entendo nada disso)
-# ---------------------------------------------------------------------------
-
 # Definindo algumas variáveis
 #
 
